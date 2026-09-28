@@ -163,3 +163,8 @@ print(co)
 print("\n==================================================")
 print("Done! Both datasets are lazily loaded and ready in memory.")
 print("==================================================")
+
+# Saves Eta variable for the loaded faces/times locally
+print("Saving surface Eta field locally...")
+ds["Eta"].to_netcdf("llc4320_Eta_subset.nc")
+print("Saved to llc4320_Eta_subset.nc!")
